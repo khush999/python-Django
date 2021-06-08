@@ -1,0 +1,42 @@
+<!-- {% extends 'base.html' %} -->
+<!-- {% block content %} -->
+
+<section class="login-sec">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+           <form class="form" onsubmit="validateForm()">
+          <div class="sign-in-bg form_login">
+            <div class="title-sign-in">
+              <h3> Sign In</h3>
+            </div>
+            <div class="inputWithIcon">
+              <input type="text" placeholder="Username" class="form-control" autocomplete="off" required />
+            </div>
+
+            <div class="inputWithIcons">
+                <input id="password" type="password" class="form-control" autocomplete="off" placeholder="password" required />
+                <div class="d-flex align-items-center">
+                  <i toggle="#password" class="fa fa-fw fa-eye field-icon toggle-password" aria-hidden="true" style="cursor:pointer;"></i>
+                </div>
+            </div>
+            <div>
+              <a href="index.html">
+                <button type="submit" class="sign-in-btn mt-3">
+                  Sign In
+                </button>
+              </a>
+            </div>
+            <div class="mt-3">
+              <a href="{% url 'sregister' %}"  class="login-text">
+                <h6>Don't have an account? <span class="signup-bold">Sign up</span></h6>
+              </a>
+            </div>
+          </div>
+           </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- {% endblock %} -->

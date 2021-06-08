@@ -1,0 +1,194 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<section class="login-sec-1">
+    <div class="container">
+      <div class="row">
+        <form class="form" onsubmit="validateForm()">
+          <div class="sign-in-bg">
+            <div class="title-sign-in">
+              <h3> Sign Up</h3>
+            </div>
+            <div class="d-flex">
+               <!--- first name --->
+              <div class="col-md-6">
+                <label for="validationDefault01" class="form-label mb-0">First name</label>
+                <input type="text" class="form-control" id="fname" autocomplete="off" required>
+                
+              </div>
+               <!--- last name --->
+              <div class="col-md-6">
+                <label for="validationDefault02" class="form-label mb-0">Last name</label>
+                <input type="text" class="form-control" id="lname" autocomplete="off" required>
+              </div>
+            </div>
+             <!--- email --->
+            <div class="col-12">
+              <label for="validationDefault02" class="form-label mb-0">Email</label>
+              <input type="email" class="form-control" id="email" autocomplete="off" required>
+            </div>
+             <!--- Address --->
+            <div class="col-12">
+              <label for="validationDefault02" class="form-label mb-0">Address</label>
+              <!-- <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea> -->
+              <input type="text" class="form-control" id="address" autocomplete="off" required>
+            </div>
+          
+            <div class="d-flex">
+              <!--- City --->
+              <div class=" col-md-6">
+                <label for="validationDefault03" class="form-label mb-0">City</label>
+                <input type="text" class="form-control" id="city" autocomplete="off" required>
+              </div>
+
+              <!--- state --->
+              <div class=" col-md-6">
+                <label for="validationDefault03" class="form-label mb-0">State</label>
+                <input type="text" class="form-control" id="state" autocomplete="off" required>
+              </div>
+            </div>
+
+            <!--- pincode --->
+            <div class=" col-12">
+              <label for="validationDefault03" class="form-label mb-0">Pincode</label>
+              <input type="number" class="form-control" id="pincode" autocomplete="off" required>
+            </div>
+
+            <!--- DOb --->
+            <div class="col-12">
+              <label for="validationDefault04" class="form-label mb-0">DOB</label>
+              <input type="date" class="form-control" id="dob" autocomplete="off" required>
+            </div>
+
+            <!--- gender --->
+            <div class="col-12 mt-3">
+              <label for="validationDefault04" class="form-label mb-0">Gender:</label>
+            <div class="d-flex align-items-center">
+              <div class="mr-3 ml-2">
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="male">Male</label><br>
+              </div>
+              <div class="mr-3">
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Female</label><br>
+              </div>
+              <div class="mr-3">
+              <input type="radio" id="other" name="gender" value="other">
+              <label for="other">Other</label>
+              </div>
+            </div>
+            </div>
+
+            <!---mobile number -->
+            <div class=" col-12">
+              <label for="validationDefault03" class="form-label mb-0">Mobile number</label>
+              <input type="number" class="form-control" id="mobileno" autocomplete="off" required>
+            </div>
+
+             <!--- Enroll no --->
+             <div class=" col-12">
+              <label for="validationDefault03" class="form-label mb-0">Enroll no</label>
+              <input type="number" class="form-control" id="enrollno" autocomplete="off" required>
+            </div>
+
+             <!--- Educational details ------>
+             <div class="edu-detail mt-3">
+              <h4 class="text-center font-weight-bold ">EDUCATIONAL DETAILS</h4>
+            </div>
+
+            <!---collage name -->
+            <div class="col-12">
+              <label for="validationDefault02" class="form-label mb-0">Collage name</label>
+              <input type="text" class="form-control" id="cname" autocomplete="off" required>
+            </div>
+
+            <!--- Education detail-->
+            <div class="col-12">
+              <label for="validationCustom04" class="form-label mb-0">Education</label>
+              <select class="form-select dob-dropdown" aria-label="Default select example">
+                <option selected>Choose..</option>
+                <option value="1">Diploma</option>
+                <option value="2">B.E/B.Tech</option>
+                <option value="3">M.E/M.Tech</option>
+               
+              </select>
+            </div>
+
+            <!---Branch-->
+            <div class="col-12">
+              <label for="validationCustom04" class="form-label mb-0">Branch</label>
+              <select class="form-select dob-dropdown" aria-label="Default select example">
+                <option selected>Choose..</option>
+                <option value="1">Computer</option>
+                <option value="2">IT</option>
+                <option value="3">Mechanical</option>
+                <option value="4">EC</option>
+                <option value="5">Auto Mobile</option>
+                <option value="6">Civil</option>
+                <option value="7">Electrical</option>
+              </select>
+            </div>
+
+            <div class="d-flex">
+             <!--- CPI -->
+             <div class=" col-md-6">
+              <label for="validationDefault03" class="form-label mb-0">CPI</label>
+              <input type="number" class="form-control" id="cpi" autocomplete="off" required>
+            </div>
+             <!--- CGPA -->
+             <div class=" col-md-6">
+              <label for="validationDefault03" class="form-label mb-0">CGPA</label>
+              <input type="number" class="form-control" id="cgpa" autocomplete="off" required>
+            </div>
+            </div>
+
+             <!--- Extra skills -->
+             <div class=" col-12">
+              <label for="validationDefault03" class="form-label mb-0">Extra Skills</label>
+              <input type="text" class="form-control" id="eskills" autocomplete="off" required>
+            </div>
+
+            <!--- resumr -->
+            <div class="col-12">
+              <label for="validationDefault04" class="form-label mb-0">Resume</label>
+              <input type="file" class="form-control" id="resume">
+            </div>
+
+            <div class="border-dashed mb-2 mt-4"></div>
+
+            <!--- Username -->
+            <div class=" col-12">
+              <label for="validationDefault03" class="form-label mb-0">Username</label>
+              <div class="d-flex justify-content-between position-relative">
+              <input type="text" class="form-control" id="uname" required>
+              </div>
+            </div>
+            <!--- PAssword -->
+            <div class=" col-12">
+              <div class="inputWithIcon">
+              <label for="validationDefault03" class="form-label mb-0">Password</label>
+              <input type="text" class="form-control" id="password" required>
+              <i class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+            </div>
+            
+          
+            <!--button -->
+            <div class="col-12">
+              <button type="submit" class="sign-in-btn mt-3">
+                Sign Up
+              </button>
+            </div>
+
+            <div class="col-12 mt-3">
+              <a href="StudentLogin.html" class="login-text">
+                <h6>Already have an account? <span class="signup-bold">Sign in</span></h6>
+              </a>
+            </div>
+        </form>
+      </div>
+    </div>
+    </div>
+  </section>
+
+{% endblock %}

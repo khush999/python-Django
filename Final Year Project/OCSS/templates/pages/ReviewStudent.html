@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<section class="form-sec mrg-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-10 col-md-10 col-sm-12 mx-auto">
+          <form class="form">
+            <h2 class="font-size-28 font-weight-bold txt-blue mb-4 mt-3 text-center">Review Student</h2>
+
+            <div class="row">
+
+              <!--- Student name --->
+              <div class="col-12 col-lg-10 col-md-10 col-sm-12 mx-auto">
+                <label for="validationDefault01" class="form-label mb-0">Student Name</label>
+                <input type="text" class="form-control add-job" id="cname" required>
+              </div>
+              <!--- Collage name --->
+              <div class="col-12 col-lg-10 col-md-10 col-sm-12 mx-auto">
+                <label for="validationDefault01" class="form-label mb-0">Collage Name</label>
+                <input type="text" class="form-control add-job" id="cname" required>
+              </div>
+
+              <!-- Description -->
+              <div class="col-12 col-lg-10 col-md-10 col-sm-12 mx-auto">
+                <label for="validationDefault01" class="form-label mb-0">Descriptions</label>
+                <textarea class="text-box-2 form-control add-job border-blue" data-name="Message:" rows="5">
+                            </textarea>
+              </div>
+              <!-------button ------->
+              <div class="col-12 col-lg-10 col-md-10 mx-auto mt-3">
+                <a href="CompanyMyAccount.html">
+                  <button type="button" class="sign-in-btn mt-2 text-center">
+                    Search
+                  </button>
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+{% endblock %}

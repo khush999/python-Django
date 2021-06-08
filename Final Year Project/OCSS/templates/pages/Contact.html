@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<section class="form-sec mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="mb-2">
+              <h4 class="font-size-28 font-weight-bold txt-blue">CONTACT INFO</h4>
+              <p class="font-size-16 txt-gray font-weight-normal mt-3 mb-0">Welcome to our website.</p>
+            </div>
+            <div class="msg-sec">
+              <!-- <div class="d-flex"> -->
+                <div class="d-flex address-sec">
+                  <div>
+                    <img src="../static/images/phone.png" width="35" alt="">
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="font-size-16">Phone</h4>
+                    <h6>+1(800) 123 45 69</h6>
+                   
+                  </div>
+                </div>
+
+              <div class="border-top mt-2 mb-2"></div>
+
+                <!---- Email -->
+                <div class="d-flex address-sec">
+              <img src="../static/images/envelope-50.png" width="35" height="35" alt="">
+                         <div>
+                 </div>
+                  <div class="ml-4">
+                    <h4>Email</h4>
+                    <h6>hello@email.com</h6>
+                   
+                  </div>
+                </div>
+              <!-- </div> -->
+              <!------ Address ----->
+              <div class="border-top mt-2 mb-2"></div>
+              <div class="d-flex address-sec">
+                <div>
+                  <!-- <img src="images/pin.svg" alt=""> -->
+                  <img src="../static/images/marker.png" width="35" alt="">
+                </div>
+                <div>
+                  <div class="ml-4">
+                    <h4>Address</h4>
+                    <h6>Lorem ipsum dolor sit amet.</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!----- Form -->
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <h3 class="font-size-28 font-weight-bold txt-blue">Informations</h3>
+          <form class="form">
+            <div class="row">
+                <div class="col-12 col-xs-12 col-md-6">
+                    <input class="text-box-2 form-control" type="text" placeholder="First Name*">
+                </div>
+                <div class="col-12 col-xs-12 col-md-6">
+                    <input class="text-box-2 form-control" type="text" placeholder="Last Name*">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-xs-12 col-md-6">
+                    <input class="text-box-2 form-control" type="text" placeholder="Phone*">
+                </div>
+                <div class="col-12 col-xs-12 col-md-6">
+                    <input class="text-box-2 form-control" type="text" placeholder="Email*">
+                </div>
+            </div>
+
+            <textarea class="text-box-2 form-control border-blue mt-3" data-name="Message:" placeholder="Your Message*" rows="5">Your Message*
+            </textarea>
+            <button type="button" class="sign-in-btn mt-3">
+              Submit
+            </button>
+        </form>
+        </div>  
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

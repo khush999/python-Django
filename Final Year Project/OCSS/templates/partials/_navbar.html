@@ -1,0 +1,68 @@
+{% load static %}
+<!-- Navbar -->
+<section>
+  <nav class="navbar navbar-expand-md  navbar-bg-dark fixed-top"  id="container-header">
+  <!-- <nav class="navbar navbar-expand-md  navbar-light fixed-top not-transparent mb-4" id="container-header"> -->
+    <div class="container-fluid mx-lg-5">
+      <a href="{% url 'index' %}" class="navbar-brand">
+        <i class="home.html" aria-hidden="true"></i>
+
+        <img src="../static/images/logo.png" width="30%" alt="">
+      </a>
+      <button class="navbar-toggler badge-dark" type="button" data-toggle="collapse" data-target="#collapsenavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="collapsenavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <div class="">
+            <a href="{% url 'index' %}" class="nav-link">Home</a>
+          </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a href=" " class="nav-link">Company</a>
+              <div class="dropdown-content">
+                <a href="{% url 'login' %}">Login</a>
+                <a href="{% url 'myaccount' %}">My Account</a>
+                <a href="{% url 'addnewjob' %}">Add new Job</a>
+                <a href="{% url 'viewpostedjob' %}">View posted job</a>
+                <a href="{% url 'logout' %}">Logout</a>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="nav-item">
+            <div class="dropdown">
+              <a href=" " class="nav-link">Student</a>
+             <div class="dropdown-content">
+                <a href="{% url 'slogin' %}">Login</a>
+                <a href="{% url 'smyaccount' %}">My Account</a>
+                <a href="{% url 'jobmatches'%}">Job Matches</a>
+                <a href="{% url 'appliedjob' %}">Applied job</a>
+                <a href="{% url 'slogout' %}">Logout</a>
+              </div>
+          </li>
+
+
+          <li class="nav-item">
+            <div class="dropdown">
+              <a href="" class="nav-link">Faculty</a>
+              <div class="dropdown-content">
+                <a href="{% url 'flogin' %}">Login</a>
+                <a href="{% url 'reviewstudent' %}">Review Student</a>
+                <a href="{% url 'flogout' %}">Logout</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="{% url 'contact' %}" class="nav-link">Contact Us</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>

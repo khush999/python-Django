@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block content %} 
+
+<section class="login-sec-1 mt-3 mb-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <form class="form">
+                <div class="sign-in-bg">
+                    <div class="title-sign-in">
+                        <h3> Sign Up</h3>
+                      </div>
+
+                    <!--- First name --->
+                    <div class="col-12">
+                        <label for="validationDefault01" class="form-label mb-0">First Name</label>
+                        <input type="text" class="form-control" id="fname" required>
+                    </div>
+                    <!--- Last name --->
+                    <div class="col-12">
+                        <label for="validationDefault01" class="form-label mb-0">Last Name</label>
+                        <input type="text" class="form-control" id="lname" required>
+                    </div>
+
+                    <!--- College Name --->
+                    <div class="col-12">
+                        <label for="validationDefault02" class="form-label mb-0">College Name </label>
+                        <!-- <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea> -->
+                        <input type="text" class="form-control" id="clgname" required>
+                    </div>
+
+                    <!--- Username --->
+                    <div class=" col-12">
+                        <label for="validationDefault03" class="form-label mb-0">Username</label>
+                        <div class="d-flex justify-content-between position-relative">
+                            <input type="text" class="form-control" id="uname" required>
+                        </div>
+                    </div>
+                    <!--- Password --->
+                    <div class=" col-12">
+                        <div class="inputWithIcon">
+                            <label for="validationDefault03" class="form-label mb-0">Password</label>
+                            <input type="text" class="form-control" id="password" required>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <!-------button ------->
+                    <div class="col-12">
+                        <button type="submit" class="sign-in-btn mt-3">
+                            Sign Up
+                        </button>
+                    </div>
+
+                    <div class="col-12 mt-3">
+                        <a href="FacultyLogin.html" class="login-text">
+                            <h6>Already have an account? <span class="signup-bold">Sign in</span></h6>
+                        </a>
+                    </div>
+            </form>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<section class="login-sec-1">
+    <div class="container">
+      <div class="row">
+        <form class="form">
+          <div class="sign-in-bg">
+            <div class="title-sign-in">
+              <h3> Sign Up</h3>
+            </div>
+            <form action="{% url 'register' %}" method="POST">
+                {% csrf_token %}
+            <!--- Company name --->
+            <div class="col-12">
+              <label for="validationDefault01" class="form-label mb-0">Company Name</label>
+              <input type="text" name="c_name" class="form-control" id="cname" required>
+            </div>
+
+
+            <!--- email --->
+            <div class="col-12">
+              <label for="validationDefault02" class="form-label mb-0">Email</label>
+              <input type="text"name="email" class="form-control" id="email" required>
+            </div>
+            <!--- Address --->
+            <div class="col-12">
+              <label for="validationDefault02" class="form-label mb-0">Address</label>
+              <!-- <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea> -->
+              <input type="text" name="address" class="form-control" id="address" required>
+            </div>
+
+            <div class="d-flex">
+              <!--- City --->
+              <div class=" col-md-6">
+                <label for="validationDefault03" class="form-label mb-0">City</label>
+                <input type="text" name="city" class="form-control" id="city" required>
+              </div>
+
+              <!--- state --->
+              <div class=" col-md-6">
+                <label for="validationDefault03" class="form-label mb-0">State</label>
+                <input type="text" name="state" class="form-control" id="state" required>
+              </div>
+            </div>
+
+            <!--- pincode --->
+            <div class=" col-12">
+              <label for="validationDefault03" class="form-label mb-0">Pincode</label>
+              <input type="number" name="pincode" class="form-control" id="pincode" required>
+            </div>
+            <!--- Contact person name--->
+            <div class=" col-12">
+              <label for="validationDefault03" class="form-label mb-0">Contact Person Name</label>
+              <input type="text" name="cp_name" class="form-control" id="contactpersonname" required>
+            </div>
+
+            <!---mobile number -->
+            <div class=" col-12">
+              <label for="validationDefault03" class="form-label mb-0">Mobile number</label>
+              <input type="number" name="contact_no" class="form-control" id="mobilenumber" required>
+            </div>
+
+            <!---company website -->
+            <div class="col-12">
+              <label for="validationDefault02" class="form-label mb-0">Company website</label>
+              <input type="text" name="c_website" class="form-control" id="companywebsite" required>
+            </div>
+
+            <!--- Username --->
+            <div class=" col-12">
+              <label for="validationDefault03" class="form-label mb-0">Username</label>
+              <div class="d-flex justify-content-between position-relative">
+                <input type="text" name="username" class="form-control" id="uname" required>
+              </div>
+            </div>
+            <!--- Password --->
+            <div class=" col-12">
+              <div class="inputWithIcon">
+                <label for="validationDefault03" class="form-label mb-0">Password</label>
+                <input type="text" name="password" class="form-control" id="password" required>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <!-------button ------->
+            <div class="col-12">
+              <button type="submit" class="sign-in-btn mt-3">
+                Sign Up
+              </button>
+            </div>
+            </form>
+
+            <div class="col-12 mt-3">
+              <a href="CompanyLogin.html" class="login-text">
+                <h6>Already have an account? <span class="signup-bold">Sign in</span></h6>
+              </a>
+            </div>
+        </form>
+      </div>
+    </div>
+    </div>
+  </section>
+
+{% endblock %}

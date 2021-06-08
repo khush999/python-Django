@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<section class="form-sec mrg-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-10 col-md-10 col-sm-12 mx-auto">
+                <form class="form">
+                    <div class="title-sign-in">
+                        <h2 class="font-size-28 font-weight-bold txt-blue mb-4 mt-3 text-center">Add New Job</h2>
+                       
+                    </div>
+                    <div class="row">
+                       
+                        <!--- Company name --->
+                        <div class="col-12 col-lg-10 col-md-10 col-sm-12 mx-auto">
+                            <label for="validationDefault01" class="form-label mb-0">Company Name</label>
+                            <input type="text" class="form-control add-job" id="cname" required>
+                        </div>
+                        <!--- Categoty-->
+                        <div class="col-12 col-lg-10 col-md-10 col-sm-12 mx-auto mt-3">
+                            <label for="validationCustom04" class="form-label mb-0">Category</label>
+                            <select class="form-select dob-dropdown" aria-label="Default select example">
+                                <option selected>Choose..</option>
+                                <option value="1">Diploma</option>
+                                <option value="2">B.E/B.Tech</option>
+                                <option value="3">M.E/M.Tech</option>
+
+                            </select>
+                        </div>
+                        <!--- Role-->
+                        <div class="col-12 col-lg-10 col-md-10 col-sm-12 mx-auto mt-3">
+                            <label for="validationCustom04" class="form-label mb-0">Role</label>
+                            <select class="form-select dob-dropdown" aria-label="Default select example">
+                                <option selected>Choose..</option>
+                                <option value="1">Software Developer</option>
+                                <option value="2">Web Developer</option>
+                                <option value="3">Programmer</option>
+                                <option value="4">Web Designer</option>
+
+                            </select>
+                        </div>
+                        <!--- Min Qualification-->
+                        <div class="col-12 col-lg-10 col-md-10 col-sm-12 mx-auto mt-3">
+                            <label for="validationCustom04" class="form-label mb-0">Min Qualification</label>
+                            <select class="form-select dob-dropdown" aria-label="Default select example">
+                                <option selected>Choose..</option>
+                                <option value="1">Diploma</option>
+                                <option value="2">B.E/B.Tech</option>
+                                <option value="3">M.E/M.Tech</option>
+
+                            </select>
+                        </div>
+                        <!--- Required Skill-->
+                        <div class="col-12 col-lg-10 col-md-10 col-sm-12 mx-auto mt-3">
+                            <label for="validationCustom04" class="form-label mb-0">Required Skill</label>
+                            <select class="form-select dob-dropdown" aria-label="Default select example">
+                                <option selected>Choose..</option>
+                                <option value="1">Python</option>
+                                <option value="2">Php</option>
+                                <option value="3">Java</option>
+
+                            </select>
+                        </div>
+                        <!--- Extra skills --->
+                        <div class=" col-12 col-lg-10 col-md-10 col-sm-12 mx-auto mt-3">
+                            <label for="validationDefault03" class="form-label mb-0">Extra Skills</label>
+                            <input type="text" class="form-control add-job" id="eskills" autocomplete="off"
+                                required>
+                        </div>
+
+                        <!--- Max Age-->
+                        <div class="col-12 col-lg-10 col-md-10 col-sm-12 mx-auto mt-3">
+                            <label for="validationCustom04" class="form-label mb-0">Max Age</label>
+                            <select class="form-select dob-dropdown" aria-label="Default select example">
+                                <option selected>Choose..</option>
+                                <option value="1">20-22</option>
+                                <option value="2">22-24</option>
+                                <option value="3">24-25</option>
+
+                            </select>
+                        </div>
+                        <!--- Job Location-->
+                        <div class="col-12 col-lg-10 col-md-10 col-sm-12 mx-auto mt-3">
+                            <label for="validationCustom04" class="form-label mb-0">Job Location</label>
+                            <select class="form-select dob-dropdown" aria-label="Default select example">
+                                <option selected>Choose..</option>
+                                <option value="1">Ahmedabad</option>
+                                <option value="2">Ghandhinagar</option>
+                                <option value="3">Surat</option>
+
+                            </select>
+                        </div>
+
+                        <!--- salary-->
+
+                        <div class="col-12 col-lg-10 col-md-10 col-sm-12 mx-auto mt-3">
+                            <label for="validationCustom04" class="form-label mb-0">Salary </label>
+                            <select class="form-select dob-dropdown" aria-label="Default select example">
+                                <option selected>In Thousand</option>
+                                <option value="1">10k-15k</option>
+                                <option value="2">15k-20k</option>
+                                <option value="3">20k-25k</option>
+
+                            </select>
+                        </div>
+                        <!--- Working Hour--->
+                        <div class=" col-12  col-lg-10 col-md-10 col-sm-12 mx-auto mt-3">
+                            <label for="validationDefault03" class="form-label mb-0">Working Hour</label>
+                            <input type="text" class="form-control add-job" id="eskills" autocomplete="off"
+                                required>
+                        </div>
+                        <!--- Description --->
+                        <div class=" col-12  col-lg-10 col-md-10 col-sm-12 mx-auto mt-3">
+                            <label for="validationDefault03" class="form-label mb-0">Description</label>
+                            <input type="text" class="form-control add-job" id="eskills" autocomplete="off"
+                                required>
+                        </div>
+                        <!--- Last Apply Date--->
+
+                        <div class="col-12  col-lg-10 col-md-10 col-sm-12 mx-auto mt-3">
+                            <label for="validationDefault04" class="form-label mb-0">Last Apply Date</label>
+                            <input type="date" class="form-control add-job" id="dob" autocomplete="off" required>
+                        </div>
+                        <!-------button ------->
+                        <div class="col-12 col-lg-10 col-md-10 mx-auto mt-3">
+                            <a href="CompanyMyAccount.html">
+                                <button type="button" class="sign-in-btn mt-2 text-center">
+                                    Search
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+{% endblock %}

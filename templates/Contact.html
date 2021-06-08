@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>OCSS</title>
+  {% load static%}
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- <link rel="stylesheet"  type="text/css" href="{% static 'css/style.css' %}"> -->
+  <link rel="stylesheet" href="../static/css/style.css">
+
+</head>
+
+<body>
+    <!-- Header section start -->
+    <section class="header-sec">
+      <nav class="navbar navbar-expand-md  navbar-light bg-dark fixed-top not-transparent" id="container-header">
+        <div class="container-fluid mx-lg-5">
+          <a href="index.html" class="navbar-brand">
+            <i class="home.html" aria-hidden="true"></i>
+            <!-- <h3 class="text-dark">OCSS</h3> -->
+            <img src="images/logo.png" alt="" width="30%">
+          </a>
+          <button class="navbar-toggler badge-dark" type="button" data-toggle="collapse" data-target="#collapsenavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-center" id="collapsenavbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <a href="" class="dropbtn nav-link">Company</a>
+                  <div class="dropdown-content">
+                    <a href="CompanyLogin.html">Login</a>
+                    <a href="CompanyMyAccount.html">My Account</a>
+                    <a href="AddNewJob.html">Add new Job</a>
+                    <a href="ViweJob.html">View posted job</a>
+                    <a href="CompanyLogin.html">Logout</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <a href="Studentlogin.html" class="dropbtn nav-link">Student</a>
+                  <div class="dropdown-content">
+                    <a href="Studentlogin.html">Login</a>
+                    <a href="StudentMyAccount.html">My Account</a>
+                    <a href="#">Job Matches</a>
+                    <a href="#">Applied job</a>
+                    <a href="Studentlogin.html">Logout</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <a href="FacultyLogin.html" class="dropbtn nav-link">Faculty</a>
+                  <div class="dropdown-content">
+                    <a href="about.html">Login</a>
+                    <a href="#">Review Student</a>
+                    <a href="FacultyLogin.html">Logout</a>
+                  </div>
+                </div>
+                <!-- <a href="FacultyLogin.html" class="nav-link">Faculty</a> -->
+              </li>
+  
+              <li class="nav-item active">
+                <a href="Contact.html" class="nav-link">Contact Us</a>
+              </li>
+  
+              <div class="dropdown">
+                <!-- <button class="dropbtn">Dropdown  -->
+                <a href="">
+                  <img src="../static/images/icons8-male-user-50.png" width="45" class="ml-5" alt="">
+                  <!-- <img src="static/images/icons8-male-user-50.png" width="45" class="ml-5" alt=""> -->
+                
+                  <!-- <img src="../static/images/caret-down.png" width="10" alt=""> -->
+                  <!-- </button> --></a>
+                <!-- <div class="dropdown-content">
+                  <a href="AdminLogin.html">Login</a>
+                  <a href="AdminRegister.html">Create Admin</a>
+                  <a href="ViewCompany.html">View Company</a>
+                  <a href="ViewStudent.html">View Student</a>
+                  <a href="AdminLogin.html">Logout</a>
+                </div> -->
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    
+  <section class="form-sec">
+    <div class="welcome-img">
+      <!-- <img src="../static/images/main-bg 1.jpg" width="100%" alt=""> -->
+     
+    </div>
+  </section>
+
+  <!---- Form section ------>
+  <section class="form-sec mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="mb-2">
+              <h4 class="font-size-28 font-weight-bold txt-blue">CONTACT INFO</h4>
+              <p class="font-size-16 txt-gray font-weight-normal mb-0">Welcome to our website.</p>
+            </div>
+            <div class="msg-sec">
+              <!-- <div class="d-flex"> -->
+                <div class="d-flex address-sec">
+                  <div>
+                    <img src="../static/images/phone.png" width="35" alt="">
+                  </div>
+                  <div class="ml-4">
+                    <h4>Email</h4>
+                    <h6>hello@email.com</h6>
+                  </div>
+                </div>
+
+              <div class="border-top mt-2 mb-2"></div>
+
+                <!---- Email -->
+                <div class="d-flex address-sec">
+              <img src="../static/images/envelope-50.png" width="35" alt="">
+                         <div>
+                 </div>
+                  <div class="ml-4">
+                    <h4 class="font-size-16">Phone</h4>
+                    <h6>+1(800) 123 45 69</h6>
+                  </div>
+                </div>
+              <!-- </div> -->
+              <!------ Address ----->
+              <div class="border-top mt-2 mb-2"></div>
+              <div class="d-flex address-sec">
+                <div>
+                  <!-- <img src="images/pin.svg" alt=""> -->
+                  <img src="../static/images/marker.png" width="35" alt="">
+                </div>
+                <div>
+                  <div class="ml-4">
+                    <h4>Address</h4>
+                    <h6>Lorem ipsum dolor sit amet.</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!----- Form -->
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <h3 class="font-size-28 font-weight-bold txt-blue">Informations</h3>
+          <form class="form">
+            <div class="row">
+                <div class="col-12 col-xs-12 col-md-6">
+                    <input class="text-box-2 form-control" type="text" placeholder="First Name*">
+                </div>
+                <div class="col-12 col-xs-12 col-md-6">
+                    <input class="text-box-2 form-control" type="text" placeholder="Last Name*">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-xs-12 col-md-6">
+                    <input class="text-box-2 form-control" type="text" placeholder="Phone*">
+                </div>
+                <div class="col-12 col-xs-12 col-md-6">
+                    <input class="text-box-2 form-control" type="text" placeholder="Email*">
+                </div>
+            </div>
+
+            <textarea class="text-box-2 form-control border-blue mt-3" data-name="Message:" placeholder="Your Message*" rows="5">Your Message*
+            </textarea>
+            <button type="button" class="sign-in-btn mt-3">
+              Submit
+            </button>
+        </form>
+        </div>  
+      </div>
+    </div>
+  </section>
+
+   <!---- footer section -->
+   <section class="footer-area">
+    <div class="bg-color2">
+      <div class="container">
+        <div class="row">
+          <!--Start single footer widget-->
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="single-footer-widget">
+              <div class="logo-img pb-3">
+                <!-- <img src="static/images/logo-2.png" width="150px" alt=""> -->
+                <img src="../static/images/logo-2.png" width="150px" alt="">
+              </div>
+              <div>
+                <p class="heading-v1">
+                  Nothing we do is more important than hiring and developing people. At the end of the day, you bet on
+                  people, not on stratgies.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--Start single footer widget-->
+          <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+            <div class="single-footer-widget">
+              <div>
+                <h3 class="head-title">COMPANY</h3>
+              </div>
+              <ul class="office-address">
+                <li>
+                  <a href="index.html" class="add">Home</a>
+                </li>
+                <li>
+                  <a href="CompanyLogin.html" class="add">Company</a>
+                </li>
+                <li>
+                  <a href="Studentlogin.html" class="add">Student</a>
+                </li>
+
+                <li>
+                  <a href="FacultyLogin.html" class="add">Faculty</a>
+                </li>
+                <li>
+                  <a href="Contact.html" class="add">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--Start single footer widget-->
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="single-footer-widget">
+              <div>
+                <h3 class="head-title">Available Job Opportunities</h3>
+              </div>
+              <ul class="office-address">
+                <li class="list-style-icon">
+                  <div class="add">
+                    <h5 class="font-size-16 text-light ">Computer Science</h5>
+                  </div>
+                </li>
+                <li class="list-style-icon">
+                  <div class="add">
+                    <h5 class="font-size-16 text-light ">Information Technology</h5>
+                  </div>
+                </li>
+                <li class="list-style-icon">
+                  <div class="add">
+                    <h5 class="font-size-16 text-light ">Mechanical Engineering</h5>
+                  </div>
+                </li>
+                <li class="list-style-icon">
+                  <div class="add">
+                    <h5 class="font-size-16 text-light ">Electronics & Communications</h5>
+                  </div>
+                </li>
+                <li class="list-style-icon">
+                  <div class="add">
+                    <h5 class="font-size-16 text-light ">Auto Mobile Engineering</h5>
+                  </div>
+                </li>
+                <li class="list-style-icon">
+                  <div class="add">
+                    <h5 class="font-size-16 text-light ">Civil Engineering</h5>
+                  </div>
+                </li>
+                <li class="list-style-icon">
+                  <div class="add">
+                    <h5 class="font-size-16 text-light ">Electrical Engineering</h5>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---- footer section -->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,465 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>OCSS</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{% static '/css/style.css'%}">
+  <!-- <link rel="stylesheet" href="../static/css/style.css"> -->
+</head>
+
+<body>
+
+  <!-- Header section start -->
+  <section class="header-sec">
+    <nav class="navbar navbar-expand-md  navbar-light bg-dark fixed-top not-transparent" id="container-header">
+      <div class="container-fluid mx-lg-5">
+        <a href="index.html" class="navbar-brand">
+          <i class="home.html" aria-hidden="true"></i>
+          <!-- <h3 class="text-dark">OCSS</h3> -->
+         
+          <!-- <img src="../../OCSS/static/images/logo.png" width="30%" alt=""> -->
+          <img src="../static/images/logo.png" width="30%" alt="">
+        </a>
+        <button class="navbar-toggler badge-dark" type="button" data-toggle="collapse" data-target="#collapsenavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="collapsenavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <div class="">
+              <a href="{% url 'index' %}" class="nav-link">Home</a>
+            </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a href=" " class="dropbtn nav-link">Company</a>
+                <div class="dropdown-content">
+                  <a href="{% url 'login' %}">Login</a>
+                  <a href="{% url 'myaccount' %}">My Account</a>
+                  <a href="{% url 'addnewjob' %}">Add new Job</a>
+                  <a href="{% url 'viewpostedjob' %}">View posted job</a>
+                  <a href="{% url 'logout' %}">Logout</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a href=" " class="dropbtn nav-link">Student</a>
+               <div class="dropdown-content">
+                  <a href="{% url 'slogin' %}">Login</a>
+                  <a href="{% url 'smyaccount' %}">My Account</a>
+                  <a href="{% url 'jobmatches'%}">Job Matches</a>
+                  <a href="{% url 'appliedjob' %}">Applied job</a>
+                  <a href="{% url 'slogout' %}">Logout</a>
+                </div>
+
+
+               <!-- <select class="form-select dob-dropdown" aria-label="Default select example">
+                  <option selected>Choose..</option>
+                  <option value="1">Login </option>
+                  <option value="2">My Account</option>
+                  <option value="3">Job Matches</option>
+                </select>
+              </div> -->
+
+          
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a href="" class="dropbtn nav-link">Faculty</a>
+                <div class="dropdown-content">
+                  <a href="{% url 'flogin' %}">Login</a>
+                  <a href="{% url 'reviewstudent' %}">Review Student</a>
+                  <a href="{% url 'flogin' %}">Logout</a>
+                </div>
+              </div>
+              <!-- <a href="FacultyLogin.html" class="nav-link">Faculty</a> -->
+            </li>
+
+            <li class="nav-item">
+              <a href="{% url 'contact' %}" class="nav-link">Contact Us</a>
+            </li>
+
+            <div class="dropdown">
+              <!-- <button class="dropbtn">Dropdown  -->
+              <a href="">
+                <img src="../static/images/icons8-male-user-50.png" width="45" class="ml-5" alt="">
+                <!-- <img src="static/images/icons8-male-user-50.png" width="45" class="ml-5" alt=""> -->
+              
+                <!-- <img src="../static/images/caret-down.png" width="10" alt=""> -->
+                <!-- <img src="static/images/caret-down.png" width="10" alt=""> -->
+                <!-- </button> --></a>
+              <!-- <div class="dropdown-content">
+                <a href="AdminLogin.html">Login</a>
+                <a href="CreateAdmin.html">Create Admin</a>
+                <a href="ViewCompany.html">View Company</a>
+                <a href="ViewStudent.html">View Student</a>
+                <a href="#">Logout</a>
+              </div> -->
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- Header section end -->
+
+  <!-- slider section start -->
+  <div id="carouselExampleControls" class="carousel slide mrg-bottom" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!-- <img class="d-block w-100" src="static/images\OCSS.jpg" alt="First slide"> -->
+        <img class="d-block w-100" src="../static/images/OCSS.jpg" alt="First slide">
+
+      </div>
+      <div class="carousel-item">
+        <!-- <img class="d-block w-100" src="static/images/hero__1.jpg" alt="Second slide"> -->
+        <img class="d-block w-100" src="../static/images/hero__1.jpg" alt="Second slide">
+
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div> 
+  <!-- slider section end -->
+
+  <!------Search Zone -->
+  <!--<section class="search-sec mrg-bottom"> -->
+    <section class="">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-10 col-md-10 col-sm-12 mx-auto">
+          <form class="form">
+            <h2 class="font-size-28 font-weight-bold txt-blue mb-4 mt-3 text-center">Your Profile Details</h2>
+            <div class="row">
+              <div class="col-12 col-lg-10 col-md-10 col-sm-12 mx-auto">
+                <label for="validationCustom04" class="form-label mb-0">Category</label>
+                <select class="form-select dob-dropdown" aria-label="Default select example">
+                  <option selected>Choose..</option>
+                  <option value="1">Computer Science</option>
+                  <option value="2">IT</option>
+                  <option value="3">Mechanical</option>
+                  <option value="4">EC</option>
+                  <option value="5">Auto Mobile</option>
+                  <option value="6">Civil</option>
+                  <option value="7">Electrical</option>
+                </select>
+              </div>
+              <div class="col-12 col-lg-10 col-md-10 col-sm-12 mt-3 mx-auto">
+                <label for="validationCustom04" class="form-label mb-0">Qualification</label>
+                <select class="form-select dob-dropdown" aria-label="Default select example">
+                  <option selected>Choose..</option>
+                  <option value="1">Diploma </option>
+                  <option value="2">B.E/B.Tech</option>
+                  <option value="3">M.E/M.Tech</option>
+                </select>
+              </div>
+              <div class="col-12 col-lg-10 col-md-10 col-sm-12 mt-3 mx-auto">
+                <label for="validationCustom04" class="form-label mb-0">Skill</label>
+                <select class="form-select dob-dropdown" aria-label="Default select example">
+                  <option selected>Choose..</option>
+                  <option value="1">.NET</option>
+                  <option value="2">PHP</option>
+                  <option value="3">Java</option>
+                  <option value="4">Python</option>
+                </select>
+              </div>
+              <div class="col-12 col-lg-10 col-md-10 col-sm-12 mt-3 mx-auto">
+                <label for="validationDefault04" class="form-label mb-0">Gender:</label>
+                <div class="d-flex align-items-center">
+                  <div class="mr-3 ml-2">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Search Company</label><br>
+                  </div>
+                  <div class="mr-3">
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Search Student</label><br>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-10 col-md-10 mx-auto mt-3">
+                <a href="{% url 'myaccount' %}">
+                  <button type="button" class="sign-in-btn mt-2 text-center">
+                    Search
+                  </button>
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!------Search Zone -->
+
+  <!----- About us ----->
+  <section class="about-sec mrg-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+          <div>
+            <div class="about-text">
+              <h4 class="font-size-28 font-weight-bold txt-blue">
+                ABOUT US
+              </h4>
+              <p class="font-size-16 txt-gray font-weight-normal">We can use campus selection system for university and
+                companies. It is developed for smooth working of HR department. Universities and companies can get
+                benefited through this system. <br /><br />
+                This software is fully integrated with student and company relationship management and developed in a
+                manner that is easily manageable, time and cost saving that shows reliveing one from manual works.
+                Online campus selection provides automated technical screening , intellectual evaluation , electronic
+                mail integration to conduct recruitment. This feature’s helps in many ways like saving cost , time and
+                paper work , this shows the paperless environment , unlimited custom and reports.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+          <div class="about-img">
+            <!-- <img src="static/images/login.jpg" alt="" width="100%"> -->
+            <img src="../static/images/login.jpg" width="100%" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!----- About us ----->
+
+  <!---- waiting section -->
+  <section class="waiting sec mrg-bottom">
+    <div class="bg-blue">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+            <div class="pt-5 pb-5">
+              <h3 class="text-white mb-3">What are you waiting for?</h3>
+              <p class="text-white font-size-16 font-weight-light mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Laudantium quos eius earum beatae ducimus qui doloribus eaque totam, porro quasi.</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-1 col-md-1 col-sm-12"></div>
+          <div class="col-12 col-lg-3 col-md-3 col-sm-12">
+            <div class="pt-5">
+              <a href="{% url 'sregister' %}"><button class="apply-btn"> Apply Now</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---- waiting section end -->
+
+  <!---- Card section -->
+  <section class="computer-science ">
+    <div class="title-text">
+      <h4 class="font-size-28 font-weight-bold txt-blue">Job Opportunities</h4>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+          <!-- <div> -->
+            <div class="mb-5">
+              <div>
+                <!-- <img src="static/images/photo-1610484826967-09c5720778c7.jpg" alt="" width="100%"> -->
+                  <img src="../static/images/photo-1610484826967-09c5720778c7.jpg" width="100%" alt="">
+              </div>
+              <div class="program-text">
+                <h3 class="font-weight-bold txt-blue">Computer Engineering</h3>
+                <p class="font-size-16 txt-gray font-weight-normal">Truth can only be found in one place: The code</p>
+                <a href="{% url 'sregister' %}" class="apply-btn">Apply Now</a>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+        <!-----Mechinical section -->
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="mb-5">
+              <div>
+                <!-- <img src="static/images/photo-1581090466619-e945d2e2980e.jpg" alt="" width="100%"> -->
+                <img src="../static/images/photo-1581090466619-e945d2e2980e.jpg" width="100%" alt="">
+              </div>
+              <div class="program-text">
+                <h3 class="font-weight-bold txt-blue">Mechanical Engineering</h3>
+                <p class="font-size-16 txt-gray font-weight-normal">Being a Mechanical Engineer, I don't lose my Hope
+                  until I resolved it.</p>
+                <a href="{% url 'sregister' %}" class="apply-btn">Apply Now</a>
+              </div>
+            </div>
+          </div>
+        <!-----Electrical section -->
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+          <!-- <div> -->
+            <div class="mb-5">
+              <div>
+                <img src="../static/images/photo-1581092921461-eab62e97a780.jpg" width="100%" alt="">
+                <!-- <img src="static/images/photo-1581092921461-eab62e97a780.jpg" alt="" width="100%"> -->
+              </div>
+              <div class="program-text">
+                <h3 class="font-weight-bold txt-blue">Electrical Engineering</h3>
+                <p class="font-size-16 txt-gray font-weight-normal">Information began as a bridge from mathematics to
+                  electrical engineer.</p>
+                <a href="{% url 'sregister' %}" class="apply-btn">Apply Now</a>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---- Card section end -->
+
+  <!---- footer section -->
+  <section class="footer-area">
+    <div class="bg-color2">
+      <div class="container">
+        <div class="row">
+          <!--Start single footer widget-->
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="single-footer-widget">
+              <div class="logo-img pb-3">
+                <!-- <img src="static/images/logo-2.png" width="150px" alt=""> -->
+                <img src="../static/images/logo-2.png" width="150px" alt="">
+              </div>
+              <div>
+                <p class="heading-v1">
+                  Nothing we do is more important than hiring and developing people. At the end of the day, you bet on
+                  people, not on stratgies.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--Start single footer widget-->
+          <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+            <div class="single-footer-widget">
+              <div>
+                <h3 class="head-title">COMPANY</h3>
+              </div>
+              <ul class="office-address">
+                <li>
+                  <a href="" class="add">Home</a>
+                </li>
+                <li>
+                  <a href="{% url 'login' %}" class="add">Company</a>
+                </li>
+                <li>
+                  <a href="{% url 'slogin' %}" class="add">Student</a>
+                </li>
+
+                <li>
+                  <a href="{% url 'flogin' %}" class="add">Faculty</a>
+                </li>
+                <li>
+                  <a href="{% url 'contact' %}" class="add">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--Start single footer widget-->
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="single-footer-widget">
+              <div>
+                <h3 class="head-title">Available Job Opportunities</h3>
+              </div>
+              <ul class="office-address">
+                <li class="list-style-icon">
+                  <div class="add">
+                    <h5 class="font-size-16 text-light ">Computer Science</h5>
+                  </div>
+                </li>
+                <li class="list-style-icon">
+                  <div class="add">
+                    <h5 class="font-size-16 text-light ">Information Technology</h5>
+                  </div>
+                </li>
+                <li class="list-style-icon">
+                  <div class="add">
+                    <h5 class="font-size-16 text-light ">Mechanical Engineering</h5>
+                  </div>
+                </li>
+                <li class="list-style-icon">
+                  <div class="add">
+                    <h5 class="font-size-16 text-light ">Electronics & Communications</h5>
+                  </div>
+                </li>
+                <li class="list-style-icon">
+                  <div class="add">
+                    <h5 class="font-size-16 text-light ">Auto Mobile Engineering</h5>
+                  </div>
+                </li>
+                <li class="list-style-icon">
+                  <div class="add">
+                    <h5 class="font-size-16 text-light ">Civil Engineering</h5>
+                  </div>
+                </li>
+                <li class="list-style-icon">
+                  <div class="add">
+                    <h5 class="font-size-16 text-light ">Electrical Engineering</h5>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+          <!-- start footer bottom -->
+          <!-- <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <hr style="border: 1px solid rgba(255, 255, 255, 0.3); ">
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="social-icon">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---- footer section -->
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
